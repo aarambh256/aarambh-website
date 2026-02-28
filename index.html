@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AARAMBH - Local Travel Made Easy</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            position: fixed;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* HERO */
+        header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 55px;
+        }
+
+        header p {
+            margin: 20px 0;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            background: #ffcc00;
+            color: black;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* SECTION */
+        section {
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            width: 260px;
+            backdrop-filter: blur(15px);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* DIFFERENT SECTIONS */
+        .features {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .safety {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+        }
+
+        footer {
+            background: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>AARAMBH</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div>
+            <h1>AARAMBH</h1>
+            <p>Your Local Travel Partner 🚗</p>
+            <button class="btn">Get Started</button>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Our Agenda</h2>
+        <p>
+            Our agenda is to create an app that includes everything related to local travelling.
+            Many local people face problems due to the unavailability of vehicles and miss important opportunities.
+            We observed this issue and decided to build AARAMBH to solve it.
+        </p>
+        <p>
+            We charge fare based on distance to ensure fair and transparent pricing.
+        </p>
+    </section>
+
+    <section id="services" class="features">
+        <h2>Our Services</h2>
+        <div class="card-container">
+            <div class="card">⚡ E-Wheelers</div>
+            <div class="card">🏍 Bikes</div>
+            <div class="card">🚗 Cars</div>
+            <div class="card">🛺 Auto</div>
+            <div class="card">➕ Many More</div>
+        </div>
+    </section>
+
+    <section id="safety" class="safety">
+        <h2>Customer Safety</h2>
+        <p>
+            For customer safety, we provide rider photo, phone number, and vehicle number before the ride.
+            We promise to protect customers from ongoing scams and ensure a safe journey.
+        </p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>For any query or support:</p>
+        <p><strong>Email:</strong> aarambh256@gmail.com</p>
+    </section>
+
+    <footer>
+        © 2026 AARAMBH | Local Travel Solution | THANK YOU ✨
+    </footer>
+
+</body>
+
+</html>
